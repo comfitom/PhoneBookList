@@ -1,0 +1,35 @@
+﻿@model Contact
+
+<form method="post" asp-action="Delete">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-white">
+                Delete Contact
+            </h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div>
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" disabled class="form-control" />
+        </div>
+        <div>
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" disabled class="form-control" />
+        </div>
+        <div>
+            <label asp-for="PhoneNumber"></label>
+            <input asp-for="PhoneNumber" disabled class="form-control" />
+        </div>
+        <div>
+            <label asp-for="Email"></label>
+            <input asp-for="Email" disabled class="form-control" placeholder="name@example.com" />
+        </div>
+        <div>
+            <label asp-for="Company"></label>
+            <input asp-for="Company" disabled class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-danger" style="width: 150px">Delete</button>
+        <a asp-controller="Contact" asp-action="Index" class="btn btn-secondary" style="width: 150px">Back To List</a>
+    </div>
+</form>
