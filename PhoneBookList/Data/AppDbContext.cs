@@ -9,7 +9,7 @@ namespace PhoneBookList.Data
         {
 
         }
-        public DbSet<Contact> contacting { get; set; }
+        public DbSet<Contact> contactings { get; set; }
 
     }
 }

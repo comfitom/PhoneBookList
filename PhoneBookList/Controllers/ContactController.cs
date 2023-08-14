@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PhoneBookList.Data;
-using PhoneBookList.Migrations;
 using PhoneBookList.Models;
 using PhoneBookList.Repository;
 

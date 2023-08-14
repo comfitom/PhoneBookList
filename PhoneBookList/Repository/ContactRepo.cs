@@ -13,22 +13,22 @@ namespace PhoneBookList.Repository
 
         public void Create(Contact contact)
         {
-            _db.contacting.Add(contact);
+            _db.contactings.Add(contact);
         }
 
         public void Delete(Contact contact)
         {
-            _db.contacting.Remove(contact);
+            _db.contactings.Remove(contact);
         }
 
         public IEnumerable<Contact> GetAll()
         {
-            return _db.contacting;
+            return _db.contactings;
         }
 
         public Contact GetById(int id)
         {
-            return _db.contacting.Find(id);
+            return _db.contactings.Find(id);
         }
 
         public void Save()
@@ -38,7 +38,7 @@ namespace PhoneBookList.Repository
 
         public void Update(Contact contact)
         {
-            _db.contacting.Update(contact);
+            _db.contactings.Update(contact);
         }
     }
 }
